@@ -1,0 +1,15 @@
+@import "~@fontsource/roboto/index.css";
+
+/* tipograph */
+$ff_title: "Roboto"; 
+
+/* media query */
+$media_mobile: 480px;
+$media_tablet: 768px;
+$media_desktop_hd: 1024px;
+$media_desktop_full_hd: 1920px;
+
+*{
+    margin: 0;
+    padding: 0;
+}

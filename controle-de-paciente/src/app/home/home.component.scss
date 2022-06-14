@@ -1,0 +1,30 @@
+@import "../../styles.scss";
+
+.c-search{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    &__container{
+
+        &--image{
+            background: #1AC4DB;
+        }
+
+        img{
+            max-width: 100%;
+        }
+
+        h1{
+            font-family: $ff_title;
+            /* height: $media_desktop_hd; */
+        }
+    }
+}
+
+@media(min-width: $media_desktop_hd){
+
+    .c-search{
+        background: red;
+    }
+
+}
