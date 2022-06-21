@@ -1,23 +1,22 @@
 <section class="c-search">
     <div class="c-search__container c-search__container--image">
-        <img src="../../assets/image/imgHome.png" alt="">
-        <div class="c-search__text">
-            <h1>Controle de paciente</h1>
-            <h2>Realize já o agendamento de seus exames</h2>
+        <div class="c-search__wrapper c-search__wrapper--image">
+            <img src="../../assets/image/imgHome.png" alt="">
+            <div class="c-search__text">
+                <h1>Controle de paciente</h1>
+                <h2>Realize já o agendamento de seus exames</h2>
+            </div>
         </div>
     </div>
     <div class="c-search__container c-search__container--form">
-        <div class="c-search__wrapper">
-            <button>Adicionar um novo paciente</button>
+        <div class="c-search__wrapper c-search__wrapper--form">
+            <app-button btnColor="marine" btnName="Adicionar um novo paciente"></app-button>
             <div class="c-search__info">
                 <p>ou acessar Paciente</p>
             </div>
             <form action="">
-                <input type="text" placeholder="Código do Paciente" name="" id="">
-                <button>
-                    <img src="../../assets/svg/icon_search.svg" alt="">
-                    Buscar paciente
-                </button>
+                <input class="c-field" type="text" placeholder="Código do Paciente" name="" id="">
+                <app-button btnColor="blue" btnName="Buscar paciente"></app-button>
             </form>
             <a href="">Acessar Lista de pacientes</a>
         </div>

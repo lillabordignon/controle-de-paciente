@@ -1,7 +1,41 @@
 @import "~@fontsource/roboto/index.css";
 
+/* colors */
+$caribbean_blue: #1AC4DB;
+$skinny_jeans: #5A88FD;
+$modern_lavender: #A8A8B3;
+$cold_grey: #9F9F9F;
+$white: #FEFEFE;
+$black: #000;
+$white_edgar: #EDEDED;
+$vitalize: #27AE45;
+$mediterranean_sea: #278EAE;
+$rose_sharon: #AE5027;
+
+/* reset */
+$no_margin: 0;
+$no_padding: 0;
+$no_border: 0;
+
+/* borda */
+$border_radius: 8px;
+$border_blue: 1px solid $caribbean_blue;
+$border_lavender: 1px solid $modern_lavender;
+
 /* tipograph */
-$ff_title: "Roboto"; 
+$ff_primary: "Roboto"; 
+
+$fw_regular: 400;
+$fw_medium: 500;
+$fw_bold: 700;
+
+$desk_title: $fw_bold 32px/36px $ff_primary;
+$desk_subtitle: $fw_regular 24px/28px $ff_primary;
+$desk_text: $fw_regular 14px/18px $ff_primary;
+
+$mob_title: $fw_bold 24px/28px $ff_primary;
+$mob_subtitle: $fw_regular 20px/22px $ff_primary;
+$mob_text: $fw_regular 14px/16px $ff_primary;
 
 /* media query */
 $media_mobile: 480px;
@@ -10,6 +44,15 @@ $media_desktop_hd: 1024px;
 $media_desktop_full_hd: 1920px;
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: $no_margin;
+    padding: $no_padding;
+}
+
+.c-field{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background: #FFFFFF;
+    border: 1px solid #A8A8B3;
+    border-radius: 8px;
 }

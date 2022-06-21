@@ -2,21 +2,89 @@
 
 .c-search{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     
     &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 15px;
 
         &--image{
-            background: #1AC4DB;
-        }
+            background: $caribbean_blue;
 
-        img{
-            max-width: 100%;
+            img{
+                max-width: 100%;
+                margin: 0 0 42px 0;
+            }
         }
 
         h1{
-            font-family: $ff_title;
-            /* height: $media_desktop_hd; */
+            font: $mob_title;
+            color: $white;
+            padding: 0 0 10px 0;
+        }
+
+        h2{
+            font: $mob_subtitle;
+            color: $white;
+        }
+    }
+
+    &__wrapper{
+
+        &--image{
+        
+        }
+
+        &--form{
+            width: 100%;
+
+            form{
+                display: grid;
+                row-gap: 20px;
+            }
+        }
+
+        a{
+            display: flex;
+            justify-content: flex-end;
+            margin: 5px 0 0;
+
+            font: $desk_text;
+            color: $skinny_jeans;
+            text-decoration: none;
+        }
+    }
+
+    &__info{
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+        color: $modern_lavender;
+        padding: 45px 0;
+        text-align: center;
+        font: $mob_text;
+
+        &::before{
+            content: '';
+            position: absolute;
+            background: $modern_lavender;
+            height: 1px;
+            width: 100%;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        p{
+            position: relative;
+            background-color: $white;
+            padding: 0 20px;
+            z-index: 3;
         }
     }
 }
@@ -24,7 +92,42 @@
 @media(min-width: $media_desktop_hd){
 
     .c-search{
-        background: red;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+
+        &__container{
+
+            &--image{
+
+            }
+    
+            img{
+                max-width: 600px;
+            }
+
+            h1{
+                font: $desk_title;
+            }
+
+            h2{
+                font: $desk_subtitle;
+            }
+        }
+
+        &__wrapper{
+
+            &--image{
+                max-width: 600px;
+            }
+    
+            &--form{
+                max-width: 455px;
+            }
+        }
+
+        &__info{
+            font: $desk_text;
+        }
     }
 
 }

@@ -1,0 +1,44 @@
+@import "../../../../src/styles.scss";
+
+.c-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 68px;
+    
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px;
+    border-radius: $border_radius;
+    border: $no_border;
+    text-decoration: none;
+    transition: all .3s ease 0s;
+
+    font: $desk_subtitle;
+    cursor: pointer;
+
+    &--blue {
+        background-color: $skinny_jeans;
+        color: $white;
+    }
+
+    &--marine {
+        background-color: $caribbean_blue;
+        color: $white;
+    }
+
+    &--white {
+        background-color: $white;
+        color: $cold_grey;
+        border: $border_blue;
+    }
+
+    &--max{
+        max-width: 438px;
+    }
+
+    &:hover{
+        opacity: 0.7;
+    }
+}
