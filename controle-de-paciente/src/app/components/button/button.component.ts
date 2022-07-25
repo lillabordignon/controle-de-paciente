@@ -9,6 +9,8 @@ export class ButtonComponent{
 
   @Input() btnName: string;
   @Input() btnColor: string;
+  @Input() btnIcon: string;
+  @Input() btnHref: string;
 
   constructor() { }
 

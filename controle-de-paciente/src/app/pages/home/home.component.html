@@ -10,15 +10,15 @@
     </div>
     <div class="c-search__container c-search__container--form">
         <div class="c-search__wrapper c-search__wrapper--form">
-            <app-button btnColor="marine" btnName="Adicionar um novo paciente"></app-button>
+            <app-button btnColor="marine" btnName="Adicionar um novo paciente" btnHref="/novo-paciente"></app-button>
             <div class="c-search__info">
                 <p>ou acessar Paciente</p>
             </div>
             <form action="">
                 <input class="c-field" type="text" placeholder="Código do Paciente" name="" id="">
-                <app-button btnColor="blue" btnName="Buscar paciente"></app-button>
+                <app-button btnColor="blue" btnName="Buscar paciente" btnIcon="search" alt=""></app-button>
             </form>
-            <a href="">Acessar Lista de pacientes</a>
+            <a routerLink="/lista-de-pacientes">Acessar Lista de pacientes</a>
         </div>
     </div>
 </section>

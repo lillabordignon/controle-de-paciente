@@ -1,0 +1,12 @@
+@import "../../../../src/styles.scss";
+
+main{
+    margin: 0 auto;
+    max-width: 1070px;
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 10rem;
+    }
+}

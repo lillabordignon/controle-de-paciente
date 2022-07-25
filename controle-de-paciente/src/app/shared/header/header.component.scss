@@ -1,0 +1,28 @@
+@import "../../../../src/styles.scss";
+
+.c-nav{
+    border-bottom: $border_blue;
+
+    &__wrapper{
+        padding: 1.5rem 3rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        button{
+            width: 100%;
+            max-width: 252px;
+            height: 56px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.c-button--white{
+                border: $border_blue;
+                border-radius: $border_radius;
+                font: desk_subtitle;
+            }
+        }
+    }
+}
